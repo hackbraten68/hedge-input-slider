@@ -12,7 +12,6 @@
               v-model="value" 
               :min="1" 
               :max="100"
-              after="test"
               v-bind="value" 
               :format="{
                 suffix: 'm',
@@ -63,7 +62,6 @@
           this.showResult = true
           this.result = Math.ceil( this.value / this.calcData )
           this.rawPlants = this.result * 4
-          console.log(this.value)
         } 
       }
     }
